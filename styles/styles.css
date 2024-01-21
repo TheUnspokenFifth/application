@@ -1,0 +1,23 @@
+.navbar-text{
+    color: black !important;
+}
+
+.btn-primary{
+    color:white;
+    background-color: #92C744;
+    font-weight: bold;
+
+}
+
+h2{
+
+    text-align: center;
+}
+
+blockquote{
+    margin-left:3em;
+}
+
+span {
+    font-style: italic;
+}

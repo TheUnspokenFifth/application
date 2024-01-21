@@ -1,3 +1,12 @@
 .navbar-custom .navbar-text {
     color: rgb(000,000,000)
 }
+.navbar-text{
+    color: black !important;
+}
+
+.btn-primary{
+    color:white;
+    background-color: #92C744;
+    btn-color: #92C744;
+}
