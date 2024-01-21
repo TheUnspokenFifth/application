@@ -1,0 +1,12 @@
+{
+  "name": "jcurtiss/328/application",
+  "authors":[
+    {
+      "name": "Joshua Curtiss",
+      "email": "curtiss.joshua@student.greenriver.edu"
+    }
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
