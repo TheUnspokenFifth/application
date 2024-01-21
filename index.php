@@ -1,23 +1,23 @@
-<?php
-//this is my controller
+    <?php
+    //this is my controller
 
-//Turn on error reporting
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
+    //Turn on error reporting
+    ini_set('display_errors', 1);
+    error_reporting(E_ALL);
 
-//require autoload file
-require_once('vendor/autoload.php');
+    //require autoload file
+    require_once('vendor/autoload.php');
 
-//Instantiate the F3 Base Class
-$f3 = Base::instance();
-//Base f3 = new Base();
+    //Instantiate the F3 Base Class
+    $f3 = Base::instance();
+    //Base f3 = new Base();
 
 
-//Define a default root
-$f3->route('GET /', function(){
-    $view = new Template();
-    echo $view->render('views/home.html');
-});
+    //Define a default root
+    $f3->route('GET /', function(){
+        $view = new Template();
+        echo $view->render('views/home.html');
+    });
 
-//run fat-free
-$f3->run();
+    //run fat-free
+    $f3->run();
