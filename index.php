@@ -15,7 +15,8 @@ $f3 = Base::instance();
 
 //Define a default root
 $f3->route('GET /', function(){
-    echo "<h1>Hello!</h1>;";
+    $view = new Template();
+    echo $view->render('views/home.html');
 });
 
 //run fat-free
