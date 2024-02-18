@@ -11,14 +11,14 @@
     //Instantiate the F3 Base Class
     $f3 = Base::instance();
     //Base f3 = new Base();
-    $con = new Controller($f3);
+//    $con = new Controller($f3);
 
 
     //Define a default root
     $f3->route('GET /', function(){
-//        $view = new Template();
-//        echo $view->render('views/home.html');
-        $GLOBALS['con']->home();
+        $view = new Template();
+        echo $view->render('views/home.html');
+//        $GLOBALS['con']->home();
     });
 
     //Define a personal information page route
