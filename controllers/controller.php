@@ -22,14 +22,47 @@ class controller
         echo $view->render('views/home.html');
     }
 
+    //Personal Information Page comes first
+
+    function personalinformation()
+    {
+        if($_SERVER['REQUEST_METHOD']== 'POST'){
+            // initialize variables
+            $fName = "";
+            $lName = "";
+            $email = "";
+            $state = "";
+            $phone = "";
+
+            //
+        }
+    }
+
     function experience()
     {
-        if (isset($_POST['experience']) and Validate::validExperience($_POST['experience'])){
-            $experience = $_POST['experience'];
+        //If the form has been submitted
+        if($_SERVER['REQUEST_METHOD']== 'POST'){
+
+            //initialize variable(s)
+            $experience = "";
+            $url = "";
+
+
+            //validate the experience year radio box
+            if (isset($_POST['experience']) and Validate::validExperience($_POST['experience'])){
+                $experience = $_POST['experience'];
+            }
+            else {
+                $this->_f3->set('errors["experience"]',"Please select a valid Years Experience.");
+            }
+
+            //If there are no errors
+            if(empty($this->_f3->get('errors'))){
+
+                //
+            }
         }
-        else {
-            $this->_f3->set('errors["experience"]',"Please select a valid Years Experience.");
-        }
+
     }
 
 
