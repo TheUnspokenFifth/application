@@ -26,9 +26,9 @@ class Validate
         return filter_var($url, FILTER_VALIDATE_URL);
     }
 
-    static function validExperience()
+    static function validExperience($experience)
     {
-
+        return in_array($experience, DataLayer::getExperience());
     }
 
     static function validPhone()

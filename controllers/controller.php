@@ -22,6 +22,15 @@ class controller
         echo $view->render('views/home.html');
     }
 
-    function
+    function experience()
+    {
+        if (isset($_POST['experience']) and Validate::validExperience($_POST['experience'])){
+            $experience = $_POST['experience'];
+        }
+        else {
+            $this->_f3->set('errors["experience"]',"Please select a valid Years Experience.");
+        }
+    }
+
 
 }
