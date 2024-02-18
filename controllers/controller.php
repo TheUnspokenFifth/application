@@ -65,5 +65,15 @@ class controller
 
     }
 
+    function jobopeningsmailinglists()
+    {
+
+    }
+
+    function summary()
+    {
+
+    }
+
 
 }
