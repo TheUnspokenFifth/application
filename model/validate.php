@@ -31,13 +31,15 @@ class Validate
         return in_array($experience, DataLayer::getExperience());
     }
 
-    static function validPhone()
+    static function validPhone($phone)
     {
+        //make sure the phone number is only digits and either 7 numbers or 10 numbers long
+        return is_numeric($phone) and (strlen($phone) == 7 | strlen($phone)== 10);
 
     }
 
-    static function validEmail()
+    static function validEmail($email)
     {
-
+        return filter_var($email, FILTER_VALIDATE_EMAIL);
     }
 }

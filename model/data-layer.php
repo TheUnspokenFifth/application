@@ -13,8 +13,5 @@ class DataLayer
         return array('0-2', '2-4', '4+');
     }
 
-    static function getCondiments()
-    {
-        return array('ketchup', 'mustard', 'mayo', 'sriracha', 'relish');
-    }
+
 }
