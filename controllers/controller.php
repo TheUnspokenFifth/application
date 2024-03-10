@@ -15,11 +15,22 @@ class Controller
         $this->_f3 = $f3;
     }
 
+    /**
+     * Renders the page adding the header and footer html
+     * @param $path String html file name of the page you are trying to render
+     */
+    private static function render($path): void
+    {
+        $view = new Template();
+        echo $view->render('views/header.html');
+        echo $view->render('views/' . $path);
+        echo $view->render('views/footer.html');
+    }
+
     function home()
     {
         //Display a view page
-        $view = new Template();
-        echo $view->render('views/home.html');
+        self::render('home.html');
     }
 
     //Personal Information Page comes first
